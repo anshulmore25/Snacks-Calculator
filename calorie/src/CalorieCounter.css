@@ -1,0 +1,34 @@
+/* Container for the calorie counter, positioned in the center right of the page */
+.calorie-counter-container {
+  position: fixed;
+  top: 50%; /* This places it vertically in the middle */
+  right: 90px; /* Keeps it on the right side */
+  transform: translateY(-50%); /* Adjusts for the height, to center it properly */
+  width: 30px; /* Width of the counter */
+  height: 350px; /* Height of the full bar */
+  background-color: lightgray; /* Background of the container */
+  border-radius: 20px; /* Rounded edges on both sides */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align the bar fill from the bottom */
+  align-items: center;
+}
+
+/* The actual calorie bar that fills vertically */
+.calorie-counter {
+  width: 100%;
+  transition: height 0.3s ease;
+  /*Smoothtransitionwhentheheightchanges*/border-radius: 20px;
+   /* Ensure the bar itself has rounded edges */;
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -ms-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+}
+
+.calorie-counter-container span {
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

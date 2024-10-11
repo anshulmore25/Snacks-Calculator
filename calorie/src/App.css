@@ -1,0 +1,244 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.snack-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 300px;
+}
+
+.snack-image {
+  width: 250px; /* Set appropriate width */
+  height: 200px; /* Set appropriate height */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.yes-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.no-btn {
+  background-color: #f44336;
+}
+
+/* Hover effect for Yes/No buttons */
+button:hover {
+  transform: scale(1.1); /* Enlarges the button on hover */
+}
+
+.yes-btn:hover {
+  background-color: #45a049;
+}
+
+.no-btn:hover {
+  background-color: #e53935;
+}
+
+/* Remove bullet points from selected snacks */
+footer ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes padding */
+  margin: 0; /* Removes margin */
+}
+
+.snack-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-tip {
+  animation: fade-in 1s ease-out, scale-up 0.3s forwards; /* Added scale effect */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for scale effect */
+@keyframes scale-up {
+  from {
+    transform: scale(0.8); /* Start slightly smaller */
+  }
+  to {
+    transform: scale(1); /* Scale to full size */
+  }
+}
+
+.summary {
+  margin-top: 20px;
+}
+
+.calorie-counter-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calorie-counter {
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+span {
+  margin-left: 0px;
+  padding-bottom: 3px;
+}
+
+.summary ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+/* Animation for the summary and snack tip */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide in from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.summary {
+  animation: fadeIn 0.5s ease forwards; /* Apply fade-in animation */
+}
+
+/* Optional: Add a bounce effect to the tip */
+.snack-tip {
+  animation: bounce 0.5s ease forwards;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Bounce up */
+  }
+  60% {
+    transform: translateY(-5px); /* Bounce down */
+  }
+}
+
+/* Full screen background */
+.animated-bg {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Snack card */
+.snack-card {
+  background-color: rgba(255, 255, 255, 0.178);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.snack-image {
+  width: 200px;
+  height: auto;
+}
+
+.yes-btn{
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-btn{
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #ee3939;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yes-btn:hover, .no-btn:hover {
+  background-color: #45a049;
+}
+
+.snack-tip {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #f1cf0e;
+  font-weight: bold; /* Fix font-size property */
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Animations for buttons */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Animations for tip */
+.animated-tip {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Progress bar */
+.calorie-counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Floating snack animation */
+@keyframes floatSnack {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}

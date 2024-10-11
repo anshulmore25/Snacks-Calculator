@@ -1,0 +1,23 @@
+/* src/components/SnackSelection.css */
+
+.snack-selection {
+    text-align: center;
+  }
+  
+  .snack-item img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
