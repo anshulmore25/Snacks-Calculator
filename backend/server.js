@@ -13,7 +13,7 @@ app.use(cors({ origin: 'http://localhost:3000' })); // Allow requests from your 
 app.use(express.json());
 
 // Connect to MongoDB (replace 'yourMongoDBURI' with your actual MongoDB connection string)
-mongoose.connect('mongodb://localhost:27017/snackTracker', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/snackTracker')
   .then(() => console.log("MongoDB connected successfully"))
   .catch((err) => console.log("MongoDB connection error:", err));
 

@@ -197,8 +197,12 @@ span {
   cursor: pointer;
 }
 
-.yes-btn:hover, .no-btn:hover {
+.yes-btn:hover {
   background-color: #45a049;
+}
+
+.no-btn:hover {
+   background-color: rgb(219, 52, 52);
 }
 
 .snack-tip {

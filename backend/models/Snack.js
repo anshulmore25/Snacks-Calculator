@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 
 const snackSchema = new mongoose.Schema({
-    snackChoices: {
-        type: [String], // Array of strings for snack choices
-        default: [],
-    },
+    snackChoices: [
+        {
+            name: { type: String, required: true },     // Name of the snack
+            img: { type: String, required: true },      // Image URL of the snack
+            calories: { type: Number, required: true }  // Calories for the snack
+        }
+    ],
     totalCalories: {
         type: Number,
         required: true, // Make this field required
