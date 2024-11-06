@@ -1,17 +1,17 @@
 {
     "builds": [
       {
-        "src": "calorie/package.json",   // This points to your frontend's package.json
-        "use": "@vercel/static-build",   // Use the static build for React apps
+        "src": "calorie/package.json",   
+        "use": "@vercel/static-build",   
         "config": {
-          "distDir": "calorie/build"    // This is where your frontend build files will be output
+          "distDir": "calorie/build"    
         }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/calorie/$1"            // This will route the requests to your frontend app
+        "dest": "/calorie/$1"            
       }
     ]
   }
